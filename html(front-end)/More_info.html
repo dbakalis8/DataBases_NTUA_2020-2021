@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+  <head> 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>COVID-19</title> 
+
+ 
+
+    <!-- styles --> 
+
+    <link rel="stylesheet" href="styles.css" /> 
+
+    <nav> 
+
+        
+
+        <div class="nav-center"> 
+
+          <!-- nav header --> 
+
+          <div class="nav-header"> 
+
+            <h3>NFC-Bracelet System</h3> 
+
+            <button class="nav-toggle"> 
+
+              <i class="fas fa-bars"></i> 
+
+            </button> 
+
+          </div> 
+
+          <!-- links --> 
+
+          <ul class="links"> 
+
+            <li> 
+
+                <a href="Hotel_Covid.html">Main</a> 
+
+              </li> 
+
+            <li> 
+
+              <a href="Services.html">Services</a> 
+
+            </li> 
+
+            <li> 
+
+              <a href="Sales.html">Sales</a> 
+
+            </li> 
+
+            <li> 
+
+              <a href="Statistics.html">Statistics</a> 
+
+            </li> 
+
+            <li> 
+
+              <a href="More_info.html">More Info</a> 
+
+            </li> 
+
+          </ul> 
+
+        </div> 
+
+      </nav> 
+
+  </head> 
+
+  <body id="services_section"> 
+
+    <h2 id="services_text">COVID-19 Info</h2> 
+
+    <form id="views_sales" action="More_info.php" method="GET"> 
+
+      <div id="component"> 
+
+        <select name="services" id="dropdown"> 
+
+          <option selected value="none">None</option> 
+
+          <option value="history of case">Case's History</option> 
+
+          <option value="possible patients">Possible Patients</option> 
+
+        </select> 
+
+      </div> 
+
+      <div id="component"> 
+
+        <input type="text" name="nfc_id"  placeholder="Give valid nfc_id" > 
+
+      </div> 
+
+      <button type="submit" id="submit" class="nfc_id"> 
+
+          <h3>Submit</h3> 
+
+      </button> 
+
+    </form> 
+
+ 
+
+    <!-- javascript --> 
+
+    <script src="app.js"></script> 
+
+  </body> 
+
+</html> 

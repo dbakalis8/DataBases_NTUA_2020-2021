@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+  <head> 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>COVID-19</title> 
+
+ 
+
+    <!-- styles --> 
+
+    <link rel="stylesheet" href="styles.css" /> 
+
+    <nav> 
+
+        
+
+        <div class="nav-center"> 
+
+          <!-- nav header --> 
+
+          <div class="nav-header"> 
+
+            <h3>NFC-Bracelet System</h3> 
+
+            <button class="nav-toggle"> 
+
+              <i class="fas fa-bars"></i> 
+
+            </button> 
+
+          </div> 
+
+          <!-- links --> 
+
+          <ul class="links"> 
+
+            <li> 
+
+                <a href="Hotel_Covid.html">Main</a> 
+
+              </li> 
+
+            <li> 
+
+              <a href="Services.html">Services</a> 
+
+            </li> 
+
+            <li> 
+
+              <a href="Sales.html">Sales</a> 
+
+            </li> 
+
+            <li> 
+
+              <a href="Statistics.html">Statistics</a> 
+
+            </li> 
+
+            <li> 
+
+              <a href="More_info.html">More Info</a> 
+
+            </li> 
+
+          </ul> 
+
+        </div> 
+
+      </nav> 
+
+  </head> 
+
+  <body id="services_section"> 
+
+    <h2 id="services_text">Useful Statistics</h2> 
+
+    <form id="views" action="Statistics.php" method="GET"> 
+
+      <div id="component"> 
+
+        <h3>Pick the time period</h3> 
+
+        <select name="services" id="dropdown"> 
+
+          <option selected value="none">None</option> 
+
+          <option value="last year">Last Year</option> 
+
+          <option value="last month">Last Month</option> 
+
+        </select> 
+
+      </div> 
+
+      <div id="component"> 
+
+        <h3>What would you like to see?</h3> 
+
+        <select name="services" id="dropdown"> 
+
+          <option selected value="none">None</option> 
+
+          <option value="popular places">Popular Places</option> 
+
+          <option value="frequently used services">Frequently used services</option> 
+
+          <option value="popular services">Popular Services</option> 
+
+        </select> 
+
+      </div> 
+
+      <div id="component"> 
+
+        <h3>Pick an age group</h3> 
+
+        <select name="age" id="dropdown"> 
+
+            <option selected value="none">None</option> 
+
+            <option value="1st">20-40</option> 
+
+            <option value="2st">41-60</option> 
+
+            <option value="3st">61+</option> 
+
+        </select> 
+
+    </div> 
+
+      <button type="submit" id="submit"> 
+
+          <h3>Submit</h3> 
+
+      </button> 
+
+  </form> 
+
+     
+
+    <!-- javascript --> 
+
+    <script src="app.js"></script> 
+
+  </body> 
+
+</html> 

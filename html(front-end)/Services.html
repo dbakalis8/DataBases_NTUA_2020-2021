@@ -1,0 +1,199 @@
+<!DOCTYPE html> 
+
+<html> 
+
+ 
+
+<head> 
+
+ 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <title>COVID-19</title> 
+
+ 
+
+    <!-- styles --> 
+
+    <link rel="stylesheet" href="styles.css" /> 
+
+    <nav> 
+
+ 
+
+        <div class="nav-center"> 
+
+            <!-- nav header --> 
+
+            <div class="nav-header"> 
+
+                <h3>NFC-Bracelet System</h3> 
+
+                <button class="nav-toggle"> 
+
+                    <i class="fas fa-bars"></i> 
+
+                </button> 
+
+            </div> 
+
+            <!-- links --> 
+
+            <ul class="links"> 
+
+                <li> 
+
+                    <a href="Hotel_Covid.html">Main</a> 
+
+                </li> 
+
+                <li> 
+
+                    <a href="Services.html">Services</a> 
+
+                </li> 
+
+                <li> 
+
+                    <a href="Sales.html">Sales</a> 
+
+                </li> 
+
+                <li> 
+
+                    <a href="Statistics.html">Statistics</a> 
+
+                </li> 
+
+                <li> 
+
+                    <a href="More_info.html">More Info</a> 
+
+                </li> 
+
+            </ul> 
+
+        </div> 
+
+    </nav> 
+
+</head> 
+
+ 
+
+<body id="services_section"> 
+
+    <section id="container"> 
+
+    <h2 id="services_text">Find Services</h2> 
+
+    <form id="views" action="Services.php" method="GET"> 
+
+        <div id="component"> 
+
+            <label for="available date"> 
+
+                <h3>Pick a date</h3> 
+
+            </label> 
+
+            <input type="date" id="available date" name="availability" value="0" min="2020-1-1" max="31-12-2021"> 
+
+        </div> 
+
+        <div id="component"> 
+
+            <h3>Pick a service</h3> 
+
+            <select name="services" id="dropdown"> 
+
+                <option selected value="none">None</option> 
+
+                <option value="hotel accomodation">Hotel Accomodation</option> 
+
+                <option value="bar">Bar</option> 
+
+                <option value="restaurant">Restaurant</option> 
+
+                <option value="conference room">Conference room</option> 
+
+                <option value="gym">Gym</option> 
+
+                <option value="sauna">Sauna</option> 
+
+                <option value="hair salon">Hair salon</option> 
+
+            </select> 
+
+        </div> 
+
+        <div id="component"> 
+
+            <label for="price"> 
+
+                <h3>Pick a price ($)</h3> 
+
+            </label> 
+
+            <input type="range" name="price"  min="0" value="0" max="200" onchange="updateTextInput(this.value);"> 
+
+            <input type="text" id="price_text" value=""> 
+
+        </div> 
+
+        <button type="submit" id="submit"> 
+
+            <h3>Submit</h3> 
+
+        </button> 
+
+    </form> 
+
+</section> 
+
+    <!-- javascript --> 
+
+    <br> 
+
+    <script src="app.js"></script> 
+
+</body> 
+
+ 
+
+<head> 
+
+    <style type="text/css"> 
+
+        table { 
+
+            border-collapse: collapse; 
+
+            width: 100%; 
+
+            color: #d96459; 
+
+            font-family: monospace; 
+
+            font-size: 25px; 
+
+            text-align: left; 
+
+        } 
+
+ 
+
+        th { 
+
+            background-color: #d96459; 
+
+            color: white; 
+
+        } 
+
+    </style> 
+
+</html> 
