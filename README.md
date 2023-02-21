@@ -1,4 +1,4 @@
-# Databases (2020-2021)
+# Repository for project in Databases course at ECE, NTUA, academic year 2020-2021
 
 Database and UI for a hotel service.
 
